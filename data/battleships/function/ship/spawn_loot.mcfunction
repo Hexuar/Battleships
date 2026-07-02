@@ -1,0 +1,1 @@
+execute if entity @s[tag=battleships.uss_iowa] run loot spawn ~ ~ ~ loot battleships:uss_iowa

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bat_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "ship.battleships.uss_iowa"
+                },
+                "item_model": "battleships:uss_iowa",
+                "minecraft:entity_data": {
+                  "id": "minecraft:item_display",
+                  "Tags": ["shiplib.entity","shiplib.spawn","battleships.uss_iowa"]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

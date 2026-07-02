@@ -1,0 +1,1 @@
+execute if entity @s[tag=battleships.uss_iowa] run function battleships:ship/uss_iowa/summon

@@ -1,0 +1,1 @@
+function battleships:ship/uss_iowa/load_data
