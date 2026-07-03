@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=battleships.ship_part.turret] at @s store result entity @s Rotation[0] float 1 as @n[type=pig,tag=battleships.ship_part.turret] on passengers run data get entity @s Rotation[0]

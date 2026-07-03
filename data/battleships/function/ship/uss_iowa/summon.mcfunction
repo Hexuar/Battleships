@@ -1,11 +1,14 @@
 # Base
 data merge entity @s {item:{id:"minecraft:command_block",components:{"minecraft:item_model":"battleships:uss_iowa"}},transformation:{"translation":[0.0f,1.0f,0.0f],scale:[25.0f,25.0f,25.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 
+
 # Acceleration
 function shiplib:part/acceleration/summon
 
+
 # Steering
 function shiplib:part/steering/summon
+
 
 # Steering Seat
 function shiplib:part/seat/summon
@@ -13,8 +16,22 @@ execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add ba
 execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add shiplib.ship_part.steering_seat
 execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
-# Floors
 
+# Turrets
+function battleships:part/turret/summon
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s add battleships.uss_iowa.turret1
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s remove shiplib.untagged
+
+function battleships:part/turret/summon
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s add battleships.uss_iowa.turret2
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s remove shiplib.untagged
+
+function battleships:part/turret/summon
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s add battleships.uss_iowa.turret3
+execute as @e[tag=battleships.ship_part.turret,tag=shiplib.untagged] run tag @s remove shiplib.untagged
+
+
+# Floors
 function shiplib:part/floor/summon
 attribute @n[type=happy_ghast,tag=shiplib.ship_part.floor,tag=shiplib.untagged] minecraft:scale base set 0.55
 execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s add battleships.uss_iowa.floor1
