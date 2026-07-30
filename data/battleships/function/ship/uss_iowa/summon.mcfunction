@@ -2,14 +2,6 @@
 data merge entity @s {item:{id:"minecraft:command_block",components:{"minecraft:item_model":"battleships:uss_iowa"}},transformation:{"translation":[0.0f,1.0f,0.0f],scale:[25.0f,25.0f,25.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 
 
-# Acceleration
-function shiplib:part/acceleration/summon
-
-
-# Steering
-function shiplib:part/steering/summon
-
-
 # Steering Seat
 function shiplib:part/seat/summon
 execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add battleships.uss_iowa.steering_seat

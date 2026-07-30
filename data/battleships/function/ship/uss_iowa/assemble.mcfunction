@@ -1,12 +1,6 @@
 # Steering Seat
 tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.seat,tag=battleships.uss_iowa.steering_seat] ^ ^4 ^4
 
-# Acceleration
-tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.acceleration] ^1.2 ^4.5 ^5
-
-# Steering
-tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.steering] ^-1.2 ^4.5 ^5
-
 # Turrets
 tp @e[type=#battleships:turret_entities,tag=shiplib.current,tag=battleships.uss_iowa.turret1,sort=nearest,limit=2] ^ ^0.75 ^14.20 ~ ~
 tp @e[type=#battleships:turret_entities,tag=shiplib.current,tag=battleships.uss_iowa.turret2,sort=nearest,limit=2] ^ ^1.40 ^8.75 ~ ~
